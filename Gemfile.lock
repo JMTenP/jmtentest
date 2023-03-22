@@ -1,6 +1,5 @@
 GEM
   remote: https://rubygems.org/
-  remote: http://rubygems.org/
   specs:
     actioncable (7.0.4.3)
       actionpack (= 7.0.4.3)
@@ -89,6 +88,13 @@ GEM
       irb (>= 1.5.0)
       reline (>= 0.3.1)
     erubi (1.12.0)
+    factory_bot (6.2.1)
+      activesupport (>= 5.0.0)
+    factory_bot_rails (6.2.0)
+      factory_bot (~> 6.2.0)
+      railties (>= 5.0.0)
+    faker (3.1.1)
+      i18n (>= 1.8.11, < 2)
     globalid (1.1.0)
       activesupport (>= 5.0)
     i18n (1.12.0)
@@ -127,6 +133,8 @@ GEM
       net-protocol
     nio4r (2.5.8)
     nokogiri (1.14.2-arm64-darwin)
+      racc (~> 1.4)
+    nokogiri (1.14.2-x86_64-darwin)
       racc (~> 1.4)
     pg (1.4.6)
     public_suffix (5.0.1)
@@ -181,6 +189,7 @@ GEM
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
     sqlite3 (1.6.1-arm64-darwin)
+    sqlite3 (1.6.1-x86_64-darwin)
     stimulus-rails (1.2.1)
       railties (>= 6.0.0)
     thor (1.2.1)
@@ -210,11 +219,14 @@ GEM
 
 PLATFORMS
   arm64-darwin-21
+  x86_64-darwin-21
 
 DEPENDENCIES
   bootsnap
   capybara
   debug
+  factory_bot_rails
+  faker
   importmap-rails
   jbuilder
   pg
@@ -234,4 +246,4 @@ RUBY VERSION
    ruby 3.0.1p64
 
 BUNDLED WITH
-   2.4.8
+   2.3.11

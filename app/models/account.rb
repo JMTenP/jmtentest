@@ -1,16 +1,16 @@
 class Account < ApplicationRecord
- 
+
   belongs_to :user
 
   # Recoverable relations
- 
+
   has_many :payments, dependent: :destroy
-  
+
   # Unrecoverable relations
-  
+
   # Paranoid
 
-  
+
   # Account info
 
   def email
@@ -44,3 +44,4 @@ class Account < ApplicationRecord
   def iban
     payment_methods.where.not(iban: nil).first&.iban
   end
+end
