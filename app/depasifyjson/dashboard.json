@@ -1,0 +1,15 @@
+{
+  "dashboard": 
+      [
+        "employees",
+        "payments"
+      ],
+      
+  "routedashboard": 
+      [
+        "employees",
+        "payments"
+      ]
+}
+
+

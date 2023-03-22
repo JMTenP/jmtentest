@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrap Form Example</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <h1 class="mb-4">CabForm¿Records¿</h1>
+    <form>
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+      </div>
+      <div class="form-group">
+        <label for="email">Email address:</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+      </div>
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea class="form-control" id="message" rows="3"></textarea>
+      </div>
+      <div class="d-flex justify-content-end">
+        <button type="button" class="btn btn-secondary mr-2">Cancel</button>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+      <div class="form-group">
+        <label for="integer-field">Integer Field</label>
+        <input type="number" class="form-control" id="integer-field" name="integer_field" placeholder="Enter an integer">
+      </div>
+      <div class="form-group">
+        <label for="string-field">String Field</label>
+        <input type="text" class="form-control" id="string-field" name="string_field" placeholder="Enter a string">
+      </div>
+      <div class="form-group">
+        <label for="float-field">Float Field</label>
+        <input type="number" step="0.01" class="form-control" id="float-field" name="float_field" placeholder="Enter a float">
+      </div>
+      <div class="form-group">
+        <label for="hash-field">Hash Field</label>
+        <textarea class="form-control" id="hash-field" name="hash_field" placeholder="Enter a hash">{ key1: "value1", key2: "value2" }</textarea>
+      </div>
+      <div class="form-group">
+        <label for="datetime-field">Datetime Field</label>
+        <input type="datetime-local" class="form-control" id="datetime-field" name="datetime_field" placeholder="Enter a datetime">
+      </div>
+    </form>
+  </div>
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="https://cdn.tailwindcss.com" />
+</head>
+
+<body>
+  <!-- Your dashboard content goes here -->
+
+  <nav class="flex justify-between bg-gray-800 text-white p-4">
+    <div>Dashboard</div>
+    <ul class="flex">
+      <li class="mx-4">Home</li>
+      <li class="mx-4">Profile</li>
+      <li class="mx-4">Logout</li>
+    </ul>
+  </nav>
+  <!-- Your dashboard content goes here -->
+
+
+</body>
+
+</html>
