@@ -47,7 +47,7 @@
       data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <form action="employees" method="get">
+    <form action="payments" method="get">
       <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search"
         name="search_term">
     </form>
@@ -164,12 +164,12 @@
       <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
         <div
           class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-          <h1 class="h2">Employees</h1>
+          <h1 class="h2">Payments</h1>
           <div class="btn-toolbar mb-2 mb-md-0">
 
               <div class="btn-group me-2">
                 <button id="ButtonCreate" type="button" class="btn btn-sm btn-outline-secondary 
-                onclick="window.location.href='https://localhost:3000/RouteCreate¿';">Create New Employee
+                onclick="window.location.href='https://localhost:3000/RouteCreate¿';">Create New Payment
                 </button>
               </div>
               
@@ -184,15 +184,15 @@
             <thead>
               <tr>
                 <th scope="col">id</th>
-                <th scope="col">account_id</th>
-                <th scope="col">user_id</th>
+                <th scope="col">uuid</th>
+                <th scope="col">amount</th>
+                <th scope="col">currency</th>
+                <th scope="col">description</th>
+                <th scope="col">operation_date</th>
+                <th scope="col">status</th>
+                <th scope="col">kind</th>
                 <th scope="col">created_at</th>
                 <th scope="col">updated_at</th>
-                <th scope="col">status</th>
-                <th scope="col">title</th>
-                <th scope="col"></th>
-                <th scope="col"></th>
-                <th scope="col"></th>
                 <th scope="col"></th>
                 <th scope="col"></th>
                 <th scope="col"></th>
@@ -204,7 +204,7 @@
             </thead>
             <tbody>
               <form id="myForm" action="/my_controller/my_action" method="POST"></form>
-              <tr><td>1</td><td>1234</td><td>0</td><td>2023-01-02 00:00:00</td><td>-</td><td>inactive</td><td>New employee tittle</td><td><button onclick="redirectToEditPage(1)">Edit</button></td><tr><td>2</td><td>1111</td><td>0</td><td>2023-05-01 00:00:00</td><td>-</td><td>inactive</td><td>New employee tittle</td><td><button onclick="redirectToEditPage(2)">Edit</button></td><tr><td>3</td><td>2222</td><td>0</td><td>2023-06-01 00:00:00</td><td>-</td><td>inactive</td><td>New employee tittle</td><td><button onclick="redirectToEditPage(3)">Edit</button></td>
+              <tr><td>1</td><td>8101526333</td><td>81.78</td><td>SEK</td><td>Magnam at laudantium expedita.</td><td>2023-03-11 15:04:15</td><td>failed</td><td>debit</td><td>2023-03-22 10:47:06</td><td>2023-03-22 10:47:06</td><td><button onclick="redirectToEditPage(1)">Edit</button></td><tr><td>2</td><td>7893952276</td><td>85.42</td><td>AWG</td><td>Officiis laudantium inventore dicta.</td><td>2023-03-18 13:17:27</td><td>failed</td><td>debit</td><td>2023-03-22 10:47:06</td><td>2023-03-22 10:47:06</td><td><button onclick="redirectToEditPage(2)">Edit</button></td><tr><td>3</td><td>2423804100</td><td>17.04</td><td>ZAR</td><td>Occaecati est nam delectus.</td><td>2023-03-15 08:02:11</td><td>pending</td><td>credit</td><td>2023-03-22 10:47:06</td><td>2023-03-22 10:47:06</td><td><button onclick="redirectToEditPage(3)">Edit</button></td><tr><td>4</td><td>8959623645</td><td>87.48</td><td>SAR</td><td>Rem placeat et doloribus.</td><td>2023-03-14 00:33:27</td><td>completed</td><td>credit</td><td>2023-03-22 10:47:06</td><td>2023-03-22 10:47:06</td><td><button onclick="redirectToEditPage(4)">Edit</button></td><tr><td>5</td><td>8714795718</td><td>79.98</td><td>UAH</td><td>Nobis facilis adipisci repellendus.</td><td>2023-03-17 06:45:28</td><td>completed</td><td>credit</td><td>2023-03-22 10:47:06</td><td>2023-03-22 10:47:06</td><td><button onclick="redirectToEditPage(5)">Edit</button></td><tr><td>6</td><td>5066528702</td><td>58.45</td><td>TTD</td><td>Officiis saepe ad ducimus.</td><td>2023-03-13 21:52:37</td><td>failed</td><td>credit</td><td>2023-03-22 10:47:06</td><td>2023-03-22 10:47:06</td><td><button onclick="redirectToEditPage(6)">Edit</button></td><tr><td>7</td><td>7252568604</td><td>83.16</td><td>ISK</td><td>Eius et iste delectus.</td><td>2023-03-10 01:10:54</td><td>failed</td><td>debit</td><td>2023-03-22 10:47:06</td><td>2023-03-22 10:47:06</td><td><button onclick="redirectToEditPage(7)">Edit</button></td><tr><td>8</td><td>2581762029</td><td>94.17</td><td>AZN</td><td>Voluptatibus in dolor dolor.</td><td>2023-03-20 15:57:35</td><td>completed</td><td>credit</td><td>2023-03-22 10:47:06</td><td>2023-03-22 10:47:06</td><td><button onclick="redirectToEditPage(8)">Edit</button></td><tr><td>9</td><td>3963857606</td><td>11.51</td><td>INR</td><td>Veritatis natus repudiandae quas.</td><td>2023-03-21 11:25:52</td><td>pending</td><td>debit</td><td>2023-03-22 10:47:06</td><td>2023-03-22 10:47:06</td><td><button onclick="redirectToEditPage(9)">Edit</button></td><tr><td>10</td><td>2906128550</td><td>50.21</td><td>GNF</td><td>Nemo dicta eaque vitae.</td><td>2023-03-13 00:47:44</td><td>failed</td><td>debit</td><td>2023-03-22 10:47:06</td><td>2023-03-22 10:47:06</td><td><button onclick="redirectToEditPage(10)">Edit</button></td><tr><td>11</td><td>1270497745</td><td>43.96</td><td>YER</td><td>Voluptas qui vel iure.</td><td>2023-03-16 15:22:55</td><td>failed</td><td>credit</td><td>2023-03-22 10:47:06</td><td>2023-03-22 10:47:06</td><td><button onclick="redirectToEditPage(11)">Edit</button></td><tr><td>12</td><td>6850340539</td><td>62.95</td><td>TJS</td><td>Laborum rerum ullam provident.</td><td>2023-03-16 18:19:09</td><td>failed</td><td>debit</td><td>2023-03-22 10:47:06</td><td>2023-03-22 10:47:06</td><td><button onclick="redirectToEditPage(12)">Edit</button></td>
             </form>
             </tbody>
           </table>
@@ -224,7 +224,7 @@
   </script>  
   <script>
       function redirectToEditPage(id) {
-      window.location.href = "employees" + '/'+id;
+      window.location.href = "payments" + '/'+id;
     }
   </script>
 
